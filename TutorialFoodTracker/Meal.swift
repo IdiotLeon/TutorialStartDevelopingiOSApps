@@ -9,14 +9,19 @@
 import UIKit
 
 class Meal{
-
+    
     var name:String
     var photo:UIImage?
     var rating:Int
     
     init?(name: String, photo:UIImage?, rating:Int){
-        // initialization should fail if there is no name or if the rating is negative
-        if name.isEmpty || rating < 0{
+        // the name must not be empty
+        guard !name.isEmpty else{
+            return nil
+        }
+        
+        // the rating must be between 0 and 5 inclusive
+        guard(rating >= 0)&&(rating <= 5)else{
             return nil
         }
         
