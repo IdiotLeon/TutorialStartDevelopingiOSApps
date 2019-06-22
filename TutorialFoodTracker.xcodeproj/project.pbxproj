@@ -13,6 +13,7 @@
 		3530FE7822BC61480061E598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3530FE7722BC61480061E598 /* Assets.xcassets */; };
 		3530FE7B22BC61480061E598 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3530FE7922BC61480061E598 /* LaunchScreen.storyboard */; };
 		3530FE8622BC61480061E598 /* TutorialFoodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3530FE8522BC61480061E598 /* TutorialFoodTrackerTests.swift */; };
+		3537741322BE031C008450B8 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3537741222BE031C008450B8 /* RatingControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		3530FE8122BC61480061E598 /* TutorialFoodTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TutorialFoodTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3530FE8522BC61480061E598 /* TutorialFoodTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialFoodTrackerTests.swift; sourceTree = "<group>"; };
 		3530FE8722BC61480061E598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3537741222BE031C008450B8 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				3530FE7022BC61470061E598 /* AppDelegate.swift */,
 				3530FE7222BC61470061E598 /* ViewController.swift */,
 				3530FE7422BC61470061E598 /* Main.storyboard */,
+				3537741222BE031C008450B8 /* RatingControl.swift */,
 				3530FE7722BC61480061E598 /* Assets.xcassets */,
 				3530FE7922BC61480061E598 /* LaunchScreen.storyboard */,
 				3530FE7C22BC61480061E598 /* Info.plist */,
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3530FE7322BC61470061E598 /* ViewController.swift in Sources */,
+				3537741322BE031C008450B8 /* RatingControl.swift in Sources */,
 				3530FE7122BC61470061E598 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

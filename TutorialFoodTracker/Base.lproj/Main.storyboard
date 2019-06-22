@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZtZ-vv-f2z">
-                                <rect key="frame" x="0.0" y="40" width="320" height="424.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZtZ-vv-f2z">
+                                <rect key="frame" x="0.0" y="40" width="320" height="507.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frP-fA-hl1">
                                         <rect key="frame" x="0.0" y="0.0" width="86.5" height="20.5"/>
@@ -50,6 +50,9 @@
                                             <outletCollection property="gestureRecognizers" destination="PdL-Z6-teJ" appends="YES" id="til-Q7-fNO"/>
                                         </connections>
                                     </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GA4-tl-hAK" customClass="RatingControl" customModule="TutorialFoodTracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="432.5" width="288" height="75"/>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="DuS-ge-RbY" secondAttribute="trailing" id="OJO-q0-S4e"/>
