@@ -22,8 +22,12 @@ import UIKit
         }
     }
     
-    var rating = 0
-
+    var rating = 0{
+        didSet{
+            updateButtonSelectionStates()
+        }
+    }
+    
     // Mark: Initialization
     override init(frame: CGRect) {
         super.init(frame:frame)
@@ -76,10 +80,32 @@ import UIKit
             // to add the new button to the rating button array
             ratingButtons.append(button)
         }
+        
+        updateButtonSelectionStates()
     }
     
     // Mark: Button Action
     @objc func ratingButtonTapped(button:UIButton){
-        print("Button pressed")
+        guard let index = ratingButtons.firstIndex(of: button)else{
+            fatalError("The button, \(button), is not in the ratingButtons array: \(COREVIDEO_USE_EAGLCONTEXT_CLASS_IN_API)")
+        }
+        
+        // to calculate the rating of the selected button
+        let selectedRating = index + 1
+        
+        if selectedRating == rating{
+            // if the selected star represents the current rating, to reset the rating to 0
+            rating = 0
+        }else{
+            // otherwise to set the rating to the selected star
+            rating = selectedRating
+        }
+    }
+    
+    private func updateButtonSelectionStates(){
+        for(index, button) in ratingButtons.enumerated(){
+            // if the index of a button is less than the rating, that button should be selected
+            button.isSelected = index < rating
+        }
     }
 }
