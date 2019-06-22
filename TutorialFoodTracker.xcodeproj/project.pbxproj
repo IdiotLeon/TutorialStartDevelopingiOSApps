@@ -15,6 +15,7 @@
 		3530FE8622BC61480061E598 /* TutorialFoodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3530FE8522BC61480061E598 /* TutorialFoodTrackerTests.swift */; };
 		3537741322BE031C008450B8 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3537741222BE031C008450B8 /* RatingControl.swift */; };
 		35B4305B22BE1C0000E0DA38 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B4305A22BE1C0000E0DA38 /* Meal.swift */; };
+		35B4305D22BEA47300E0DA38 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B4305C22BEA47300E0DA38 /* MealTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		3530FE8722BC61480061E598 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3537741222BE031C008450B8 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		35B4305A22BE1C0000E0DA38 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		35B4305C22BEA47300E0DA38 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				3530FE7922BC61480061E598 /* LaunchScreen.storyboard */,
 				3530FE7C22BC61480061E598 /* Info.plist */,
 				35B4305A22BE1C0000E0DA38 /* Meal.swift */,
+				35B4305C22BEA47300E0DA38 /* MealTableViewCell.swift */,
 			);
 			path = TutorialFoodTracker;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				3530FE7322BC61470061E598 /* ViewController.swift in Sources */,
 				3537741322BE031C008450B8 /* RatingControl.swift in Sources */,
 				3530FE7122BC61470061E598 /* AppDelegate.swift in Sources */,
+				35B4305D22BEA47300E0DA38 /* MealTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
