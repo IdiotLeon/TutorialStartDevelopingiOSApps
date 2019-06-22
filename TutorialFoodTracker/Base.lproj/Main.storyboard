@@ -113,15 +113,21 @@
                     </view>
                     <navigationItem key="navigationItem" title="New Meal" id="PQm-lx-CvM">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="tBS-5y-QMr"/>
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="t6f-bX-J7y"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="t6f-bX-J7y">
+                            <connections>
+                                <segue destination="ObV-Sq-Rrx" kind="unwind" unwindAction="unwindToMealListWithSender:" id="bfN-rN-tGv"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="nameTextField" destination="DuS-ge-RbY" id="2jV-to-ZlH"/>
                         <outlet property="photoImageView" destination="0h9-Da-TaX" id="gfr-Di-Ntm"/>
                         <outlet property="ratingControl" destination="GA4-tl-hAK" id="TjS-CJ-goL"/>
+                        <outlet property="saveButton" destination="t6f-bX-J7y" id="hbI-cu-1yA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="ObV-Sq-Rrx" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="PdL-Z6-teJ">
                     <connections>
                         <action selector="selectimageFromPhotoLibrary:" destination="BYZ-38-t0r" id="pgu-Ih-g88"/>
@@ -164,7 +170,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JYq-vO-5PY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1136.25" y="129.92957746478874"/>
+            <point key="canvasLocation" x="1260" y="130"/>
         </scene>
     </scenes>
     <resources>
